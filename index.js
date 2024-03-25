@@ -9,7 +9,7 @@ btn.addEventListener("click", () => {
     const valor = Number(input.value);
     tentativas++;
     if (valor === numero) {
-        resultado.innerHTML = `Parabéns! O número correto era ${numero}. <br>Tentativas: ${tentativas} <button onclick="window.location.reload()">Jogar novamente</button>`;
+        resultado.innerHTML = `Parabéns! O número correto era ${numero}. <br>Tentativas: ${tentativas} <button onclick="window.location.reload()" class="botao-reiniciar">Jogar novamente</button>`;
         input.value = "";
         input.focus();
         tentativas = 0;
@@ -25,7 +25,7 @@ btn.addEventListener("click", () => {
     }
 
     if (tentativas === 3) {
-        resultado.innerHTML = `Você perdeu! <br>O número correto era ${numero}. <button onclick="window.location.reload()">Jogar novamente</button>`;
+        resultado.innerHTML = `Você perdeu! <br>O número correto era ${numero}. <button onclick="window.location.reload()" class="botao-reiniciar">Jogar novamente</button>`;
         input.value = "";
         input.focus();
         tentativas = 0;
