@@ -25,7 +25,7 @@ btn.addEventListener("click", () => {
     }
 
     if (tentativas === 3) {
-        resultado.innerHTML = `Você perdeu! <br>O número correto era ${numero}. <button onclick="window.location.reload()" class="botao-reiniciar">Jogar novamente</button>`;
+        resultado.innerHTML = `Você perdeu! O número correto era ${numero}. <br><button onclick="window.location.reload()" class="botao-reiniciar">Jogar novamente</button>`;
         input.value = "";
         input.focus();
         tentativas = 0;
